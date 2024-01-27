@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transfer Balance | X-Change</title>
+    <link rel = "stylesheet" href = "/design.css"/> 
+    <link rel = "stylesheet" href = "/send.css"/> 
+</head>
+<body>
+
+    <div class="container">
+        <div class="send-box">
+            <div class="left-sb">
+
+                <div class="ls-box">
+                    <form action = "/auth/cancel" method = "POST"> 
+                    <input type = "submit" value ="↲ CANCEL" >
+                    </form>
+                </div>
+                <div class="ls-box"></div>
+                <div class="ls-box">
+                    <img src = "/xlogo.png"/>
+                </div> 
+                <div class="ls-box"></div>
+
+            </div>
+
+            <div class="right-sb">
+                <div class="rs-box">
+                    <h3> NEW TRANSACTION </h3>
+                </div>
+
+                <div class="rs-box">
+                    <h1> SEND MONEY TO </h1>
+                    
+                </div>
+
+                <div class="rs-box">
+                      <form action="/transact/send" method="POST">
+                            <div class="form-div">
+                                <input type="text" name="rnumber" placeholder="Recepient's Number" maxlength="11" minlength="11" pattern="[0]{1}[0-9]{10}" required/></div>
+
+                            <div class="form-div">
+                                <input name="amount" type="number" placeholder="Amount" step=".05" required> </div>
+                            <div class="form-div">
+                                <input type="text" name="message" placeholder="Message">
+                            </div>
+
+                            <div class="sub">
+                                <input type="submit" value = "SEND ➤">
+                            </div>
+                            
+                            
+                    </form>
+                    
+                </div>
+
+                <div class="rs-box" id = "errormsg">                
+                        {{#if message}}
+                        <h1>Error: {{message}}</h1>
+                        {{/if}}
+                </div>
+
+
+            </div>
+
+            
+        </div>
+
+
+
+    </div>
+  
+
+   
+
+    {{#if message}}
+    <h1>{{message}}</h1>
+    {{/if}}
+
+              
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction History | X-Change</title>
+    <link rel = "stylesheet" href = "/design.css"/> 
+    <link rel = "stylesheet" href = "/tr.css"/> 
+
+</head>
+<body>
+
+    <div class="container">
+        <div class="tr-box">
+            <div class="header">
+                <div class="back">
+                    <form action='/auth/cancel' method="POST">
+                        <input type="submit" value=" ↲  Go back to dashboard">
+                    </form>
+                </div>
+
+                <div class="logo">
+                    <img src = "/xlogo.png"/> 
+                </div>
+
+                <div class="title">
+                    <h1> TRANSACTION HISTORY </h1>
+                </div>
+            </div>
+
+
+            <div class="content">
+
+                 <div class="table-header">
+                    <div class="th-h">
+                        <h1> Date </h1>
+                    </div>
+                        
+                    <div class="th-h">
+                        <h1> Type </h1>
+                    </div>
+
+                    <div class="th-h">
+                        <h1> Amount </h1>
+                    </div>
+
+                    <div class="th-h">
+                        <h1> Message </h1>
+                    </div>
+                </div>
+
+                <div class="table-items">
+                    
+                     {{#each transactlog}}
+                     <div class="t-item">
+                        <div class="ti-i"> 
+                            {{Logs.Transact.Timestamp}}
+                           
+                        </div>
+
+                        <div class="ti-i"> 
+                            {{Logs.Transact.Details.Mode}}
+                           
+                        </div>
+
+                        <div class="ti-i">
+                            {{Logs.Transact.Details.Amount}}
+                        </div>
+
+                        <div class="ti-i long">
+                            {{Logs.Transact.Details.Message}}
+                        </div>
+                    </div>
+                    {{/each}}
+
+                    
+
+                </div>
+               
+               
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,130 @@
+.root { 
+    --primary: #fc3c04; 
+    --secondary: #fc541c; 
+    --peach: #fcd5cc; 
+    --white: #ffffff; 
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.cn-box { 
+    border-radius: 15px;
+    width: 30%; 
+    height: 30%;    
+    display: flex;
+    flex-direction: column; 
+    background-color: #fc3c04;
+}
+
+.box-logo { 
+    width: 100%;
+    height: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: end;
+}
+
+.box-logo img { 
+    width:30%; 
+    height:75%;
+}
+
+.cn-box-title { 
+    width :100%; 
+    height: 20%; 
+    display: flex; 
+    justify-content: center;
+    
+
+}
+
+.left { 
+    width: 20%; 
+    height: 100%; 
+
+}
+
+.left-btn {
+    width: 85%; 
+    height: 65%; 
+    background-color: #fcd5cc;
+    border-radius: 5px;
+}
+
+.left-btn a { 
+    text-decoration: none; 
+    color: #fc3c04;
+    font-weight: 600; 
+}
+
+.left,.right, .left-btn{ 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.right { 
+    width: 60%; 
+    height: 100%;
+
+}
+.right h1 { 
+    color:  white;
+}
+
+.cn-box-form  {
+    width: 100%; 
+    height: 30%; 
+
+}
+
+.cn-box-form form { 
+    width: 100%; 
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+input[type=email], input[type=submit]  { 
+    padding: 15px;
+    border: none;
+}
+
+input[type=email] { 
+     width: 45%;
+}
+
+input[type=submit] { 
+    background-color: #fcd5cc;
+    width: 25%;
+    color:#fc3c04; 
+    font-weight: 600;
+    transition: 300ms;
+}
+
+input[type=submit]:hover { 
+    background-color: #ffc3b6;
+}
+
+
+.extra { 
+    width: 100%; 
+    height: 20%; 
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    
+}
+
+
+.extra h2 { 
+    color: rgb(200, 197, 197); 
+    font-size: 15px;
+}

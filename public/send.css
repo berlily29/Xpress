@@ -1,0 +1,156 @@
+.root { 
+    --primary: #fc3c04; 
+    --secondary: #fc541c; 
+    --peach: #fcd5cc; 
+    --white: #ffffff; 
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+h1  {color: black;}
+
+.send-box { 
+    border-radius: 15px;
+    width: 35%; 
+    height: 45%; 
+    background-color:#fcd5cc;
+    display: grid; 
+    grid-template-rows: 100%;
+    grid-template-columns: 40% 60%;
+}
+
+.left-sb { 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #fc3c04;
+    width: 100%; 
+    height: 100%;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 40% 30%
+}
+
+.ls-box { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.ls-box form{ 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.ls-box input[type=submit] { 
+    width: 75%; 
+    height: 55%; 
+    background-color: white;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    transition: 300ms;
+    color:#fc3c04;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.ls-box input[type=submit]:hover {
+    transform: scale(1.03)
+}
+
+
+.right-sb { 
+    width: 100%;
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 15% 55% 15%;
+}
+
+.rs-box { 
+    width: 100%; 
+    height: 100%; 
+    
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.rs-box form { 
+    width: 100%; 
+    height: 100%; 
+
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+}
+
+.form-div { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.form-div input[type=text],input[type=number] { 
+    width: 80%; 
+    height: 80%;
+    padding-left: 25px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 300ms;
+}
+
+.form-div input[type=text]:focus, .form-div input[type=number]:focus { 
+    transform :scale(1.03)
+}
+
+.sub input[type=submit] { 
+    width: 50%; 
+    height: 70%;
+    border: none;
+    background-color: #fc3c04;
+    color: white;
+    border-radius: 15px;
+}
+#errormsg h1{ 
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+
+.sub { 
+    
+    width: 95%; 
+    height: 100%;
+    display: flex; 
+    justify-content: end;
+    align-items: end;
+}
+
+
+.rs-box h3 { 
+    color:#fc541c
+}
+.rs-box h1 { 
+    color:#fc3c04
+}
+
+

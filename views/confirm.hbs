@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Transfer | X-Change</title>
+    <link rel = "stylesheet" href = "/design.css"/> 
+    <link rel = "stylesheet" href = "/conf.css"/> 
+</head>
+<body>
+
+
+  <div class="container">
+      <div class="conf-box">
+            <div class="logo">
+              <img src = "/xlogo.png"/> 
+            </div>
+
+            <div class="box-title">
+              <h1>  CONFIRM THE TRANSACTION</h1>
+            </div>
+
+            <div class="receipt">
+                <div class="rec-tab"> 
+                   <small> --------- ACCOUNT INFORMATION --------- </small>
+                </div>
+
+                  <div class="rec-tab">
+                       {{#if fname}} {{#if lname}}
+                          <h1 id = "name">{{lname}}, {{fname}}</h1>
+                        {{/if}} {{/if}}
+                </div>
+
+                <div class="rec-tab">
+                       {{#if mnumber}}
+                          <h1>{{mnumber}}</h1>
+                        {{/if}}
+                </div>
+
+                <div class="rec-tab">
+                       {{#if mnumber}}
+                          <h1>Balance : ₱{{balance}}</h1>
+                        {{/if}}
+                </div>
+
+                <div class="rec-tab"></div>
+
+                <div class="rec-tab">
+                   <small> ------- TRANSACTION INFORMATION ------- </small>
+                </div>
+
+                  <div class="rec-tab">
+                      {{#if rmobile}}
+                      <h1>To:  {{rmobile}}</h1>
+                      {{/if}}
+                </div>
+                <div class="rec-tab">
+                      {{#if rfname}}
+
+                        {{#if rlname}}
+                        <h1>Name: {{rfname}} {{rlname}} </h1>
+                        {{/if}}
+                        {{/if}}
+                </div>
+
+                 <div class="rec-tab">
+                       {{#if amount}}
+                      <h1>Amount: ₱{{amount}}</h1>
+                      {{else}}
+                      <h1>SENDING: -----</h1>
+                      {{/if}}
+                </div>
+
+                <div class="rec-tab" id = "msg">
+                       {{#if msg}}
+                      <h1>Message: {{msg}}</h1>
+                      {{else}}
+                      <h1>Message: </h1>
+                      {{/if}}
+                </div>
+
+                <div class="rec-tab">
+                    <div class="cnmsg">
+                        <h1> Double check the information above before pressing the confirm button</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="submit-btn">
+               <form action="/transact/confirmation" method="POST">
+              <input type="Submit" value = "Confirm" >
+                </form>
+            </div>
+      </div>
+    
+  </div>
+
+</body>
+</html>

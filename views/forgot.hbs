@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset MPIN | X-Change</title> 
+    <link rel= "stylesheet" href = "/design.css"/> 
+    <link rel = "stylesheet" href = "/forpass.css"/> 
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="cn-box">
+
+            <div class="box-logo">
+                <img src= "/xlogo.png"/> 
+            </div>
+            <div class="cn-box-title">
+                <div class="left">
+                    <div class="left-btn">
+                        <a href = "/login"/>  ↵ Cancel </a>  
+                    </div>
+                    
+                </div>
+                <div class="right">
+                    <h1>RESET YOUR MPIN</h1>
+                </div>
+                
+            </div>
+
+            <div class="cn-box-form">
+
+                <form action="/forgotpassword" method="POST">
+                    <input type='email' name="email" placeholder="email">
+                    <input type="submit" value="Send Verification Link">
+                </form>
+            </div>
+
+            <div class="extra">
+                    
+
+                {{#if message}}
+                <h2>{{message}}</h2>
+                {{/if}}
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

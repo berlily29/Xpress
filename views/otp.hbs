@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter OTP | X-Change</title>
+    <link rel = "stylesheet" href  = "/design.css"/> 
+    <link rel = "stylesheet" href = "/otp.css"/> 
+</head>
+<body>
+    <div class="container">
+        <div class="otp-box">
+
+            <div class="box-logo">
+                <img src = "/xlogo.png"/> 
+            </div>
+
+            <div class="box-title">
+                <div class="title1"><h1> VERIFICATION </h1>
+                <h3> ENTER OTP </h3></div> 
+            </div>
+
+
+
+            <div class="otp-form">
+                <form action="/auth/otp" method="POST">
+                    <div class="otp-pin">
+                    <input type="number" onKeyPress="if(this.value.length==1) return false;" name="one"/>
+                    <input type="number" onKeyPress="if(this.value.length==1) return false;" name="two"/>
+                    <input type="number" onKeyPress="if(this.value.length==1) return false;" name="three"/>
+                    <input type="number" onKeyPress="if(this.value.length==1) return false;" name="four"/>
+                    </div>
+                    <input type="submit" value = "VERIFY"/>
+
+                </form>
+            </div>
+
+            <div class="extra">
+                 {{#if message}}
+                    <small>{{message}}</small>
+                    {{/if}}
+            </div>
+
+        </div> 
+    </div>
+</body>
+</html>
+

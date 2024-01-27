@@ -1,0 +1,158 @@
+.root { 
+    --primary: #fc3c04; 
+    --secondary: #fc541c; 
+    --peach: #fcd5cc; 
+    --white: #ffffff; 
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.tr-box { 
+    overflow: hidden;
+    background-color: #fc3c04;
+    width: 75%; 
+    height:75%; 
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 90%;
+    border-radius: 15px;
+}
+
+.header { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 30% 10% 60%;
+
+}
+
+.back { 
+    width: 100%;
+    height: 100%; 
+}
+
+.back form { 
+    width :100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] { 
+    border: none;
+    border-radius: 15px;
+    width: 85%; 
+    height: 35%;
+    background-color: white;
+    color:#fc3c04 ;  
+    font-size: 1.3vw;
+    transition :300ms; 
+}
+
+input[type=submit]:hover { 
+    transform: scale(1.03);
+}
+
+.logo { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: end;
+    align-items: center;
+}
+
+.logo img { 
+    width: 100%; 
+    height: 80%;
+}
+
+.title { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+}
+.title h1 { 
+    color: white;
+    font-size: 2vw;
+    padding: 0 50px;
+    border-radius: 5px;
+    background-color: #fc6938;
+    font-weight: 600
+}
+
+.th-h { 
+    font-weight: 500;
+}
+
+.content {
+    width :100%; 
+    height: 100%; 
+    background-color: #fc541c;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 90%;
+    
+}
+
+.table-header { 
+    width :100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 100%;
+    background-color: #fc541c;
+}
+
+.th-h { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.th-h h1 { 
+    color: white;
+}
+
+.table-items {
+    background-color: #fcd5cc;
+    width :100%; 
+    height: auto; 
+    
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+    border-bottom-right-radius: 15px;
+}
+
+.t-item {
+    border-bottom: 1px solid #fde3dd;
+    width: 100%; 
+    height: 10%; 
+    display: grid; 
+    grid-template-columns: 20% 20% 20% 40%;
+    grid-template-rows: 100%;
+
+    
+}
+
+.ti-i { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}

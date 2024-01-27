@@ -1,0 +1,139 @@
+.root { 
+    --primary: #fc3c04; 
+    --secondary: #fc541c; 
+    --peach: #fcd5cc; 
+    --white: #ffffff; 
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.about-box { 
+    width: 30%; 
+    height:55%;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 30% 50% 10%;
+    background-color:#fc3c04;
+    border-radius: 15px;
+}
+
+.back { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.back form { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=submit] { 
+    width: 50%; 
+    height: 70%;
+    border: none;
+    color:#fc3c04; 
+    font-weight: 600;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 15px;
+    transition :300ms;
+}
+
+input[type=submit]:hover { 
+    transform: scale(1.03)
+}
+
+
+.logo { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+}
+
+.logo-img {
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img img { 
+    width: 25%; 
+    height: 75%;
+}
+
+.app-version { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.app-version h1 { 
+    font-size: 20px;
+    font-weight: 400; 
+    color: rgb(255, 221, 221); 
+}
+
+.app-info { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.app-info-text { 
+    display: grid; 
+    grid-template-rows: 30% 70%;
+    grid-template-columns: 100%;
+    width: 90%; 
+    height: 90%; 
+    background-color: #fcd5cc;
+    border-radius: 10px;
+}
+
+.ai-text { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.ai-text h1 { 
+    color: #fc3c04;
+    
+    text-align: center;
+}
+
+#short { 
+    font-size: 20px;
+}
+
+#long { 
+    font-size: 20px;
+    font-weight:400;
+}
+
+.footer { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 221, 221)
+}

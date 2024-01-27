@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | X-Change</title>
+    <link rel = "stylesheet" href = "/login.css"/> 
+    <link rel = "stylesheet" href = "/design.css"/> 
+</head>
+<body>
+        <div class="container">
+
+                <div class="login-box">
+                        <div class="box-logo">
+                                <img src = "/xlogo.png"/> 
+                        </div>
+                        
+
+                        <div class="login-form">
+                                <form action="/auth/login" method="POST">
+                                <label>Mobile</label> <br>
+                                <input type="text" name="number" placeholder="Input your 11 digit number" maxlength="11" minlength="11" pattern="[0]{1}[0-9]{10}" id = "number" required/> <br>
+                                <small>format: 091231512</small> <br>
+                                <label>MPIN</label><br>
+                                <input type="password" name="mpin" placeholder="MPIN - 4 digits" maxlength="4" pattern="[0-9]{4}" required/> <br>
+                                        <input type="submit" name="submit" value="Login"/> <br> <br> 
+                                         <a href = "forgotpassword">Forgot your MPIN?</a> <br> 
+                                 {{#if message}}
+                                        <small id  = "msg">{{message}}</small>
+                                {{/if}}
+                                </form>
+
+                                <br> 
+                               
+                        </div>
+
+                      
+
+                </div>
+        </div>
+        
+</body>
+</html>
+

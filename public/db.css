@@ -1,0 +1,408 @@
+.root { 
+    --primary: #fc3c04; 
+    --secondary: #fc541c; 
+    --peach: #fcd5cc; 
+    --white: #ffffff; 
+}
+
+.container { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.sidebar {
+    width: 20%; 
+    height: 100%; 
+    background-color: #fc3c04;
+    display: grid; 
+    grid-template-columns: 100%; 
+    grid-template-rows: 20% 60% 20%;
+} 
+
+.sidebar-item { 
+    width :100%; 
+    height: 100%; 
+    
+}
+
+.box-logo { 
+    width: 100%; 
+    height: 30%; 
+    display: flex; 
+    justify-content: center;align-items: center;
+}
+.box-logo img {
+    width: 50%; 
+    height:85%;
+}
+
+.account{ 
+    width: 100%; 
+    height: 60%; 
+    display: grid; 
+    grid-template-columns: 100%; 
+    grid-template-rows: 40% 30%;
+}
+
+.acc-name { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.acc-name h1 { 
+    font-weight: 700;
+}
+
+.acc-name h2 { 
+    font-weight: 600;
+}
+
+.acc-info {
+
+    line-height: 30px;
+    width: 95%; 
+    height: 55%;
+    text-align: center  ;
+}
+.acc-balance { 
+    width: 100%; 
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bal-box { 
+    width: 85%; 
+    height: 85%;
+    display: grid; 
+    grid-template-rows: 30% 70%; 
+    grid-template-columns: 100% ;
+}
+
+.bal-title { 
+    width: 100%; 
+    height: 100%; 
+}
+
+.bal-title h1 { 
+    font-size: 1.3vw;
+    font-weight: 400;
+}
+
+
+.bal-title, .bal-info { 
+    display: flex; 
+    justify-content: center;
+    align-items: center ;
+}
+.bal-info { 
+    background-color: white;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 100%; 
+    height: 100%; 
+}
+
+.bal-box h2 { 
+    color: #fc3c04;
+    font-weight: 500; 
+    font-size: 2.5vw;
+}
+
+h1,h2 { 
+    color: white
+}
+
+.logout { 
+    width: 100%; 
+    height: 10%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.logout-btn {
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 65%; 
+    height :95%;
+    border-radius: 5px; 
+    background-color: #ff7142;
+}
+
+
+.logout-btn form { 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width :100% ;
+    height: 100%;
+  
+}
+.logout-btn input[type=submit]{ 
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    border: none; 
+    background-color: #ff7142;
+    width: 100%; 
+    height: 100%;
+    cursor: pointer; 
+    transition: 300ms; 
+}
+
+.logout-btn input[type=submit]:hover { 
+    transform: scale(1.03)
+}
+
+
+/*** container contents ***/ 
+.container-content{ 
+    width: 80%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.cc-box { 
+    width: 90%; 
+    height: 80%; 
+    background-color: #ffe3dd;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 65% 5%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px; 
+}
+
+.recent-login { 
+   
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.rl-box { 
+    width: 98%; 
+    height: 90%; 
+    background-color: #fc541c;
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 85%;
+  
+}
+
+.rl-title { 
+    width :100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #fc541c;
+    
+
+}
+
+.rl-title h1 { 
+    font-size: 1.2vw;
+    color:rgb(255, 253, 253)
+}
+
+.rl-content {
+    width: 100% ;
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 20% 20% 20% 20% ;
+}
+
+.rl-cr { 
+    width: 100%; 
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+}
+
+.rl-cr-info { 
+    background-color: #fd6836;
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transition: 300ms;
+    overflow: hidden;
+}
+
+.rl-cr-info:hover{ 
+    background-color: #e96033;
+    transform: scale(1.05)
+}
+
+
+
+.rl-cr-info h4 { 
+    font-weight: 400;
+    color: white;
+    font-size:  0.9vw; 
+    cursor: default 
+}
+
+.menu { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    background-color: #fcd5cc;
+}
+
+.menu-title { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box-title { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-box-title h1 { 
+    color:#fc3c04; 
+    font-size: 2vw;
+    
+}
+
+
+.menu-boxes { 
+    width: 100%; 
+    height: 100%; 
+    display: grid; 
+    grid-template-rows: 100%; 
+    grid-template-columns: 10% 26.66% 26.66%  26.66%  10%
+}
+
+.mb { 
+    width: 100%; 
+    height: 100%; 
+   
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+
+}
+
+.mb-box { 
+    width: 95%; 
+    height: 95%; 
+    background-color: #fc3c04;
+    border-radius: 15px;
+    display: grid; 
+    grid-template-rows: 80% 20% ;
+    grid-template-columns: 100%;
+    transition: 300ms;
+}
+
+.mb-box:hover { 
+    background-color: #db3300;
+transform: scale(1.03)     
+}
+
+
+.icon { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.icon span { 
+    color: White; 
+    font-weight: 400; 
+    font-size: 10vw;
+}
+
+.menu-title { 
+    width: 100%; 
+    height: 20%; 
+    display: flex; 
+    justify-content: center;
+    align-items: start;
+    background-color: #fc3c04;
+    
+}
+
+.menu-title h1 { 
+    color: white; 
+    font-size: 2vw; 
+    font-weight: 400;
+}
+
+.menu-title form { 
+    width: 100%;
+    height: 100%;
+}
+
+.menu-title form input[type=submit] { 
+    background-color: #fc3c04;
+    color: white;
+    border: none;
+    width: 100%; 
+    height: 100%;
+    color: white; 
+    font-size: 2vw; 
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.mb-box a { 
+    width: 100%; 
+    height: 100%;
+    text-decoration: none;
+}
+
+
+.footer { 
+    width: 100%; 
+    height: 100%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: #fdbeb0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.footer h3 { 
+    font-weight: 300;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    
+    
+}

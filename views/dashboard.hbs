@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | X-Change</title>
+    <link rel = "stylesheet" href  = "/design.css"/>
+    <link rel = "stylesheet" href = "/db.css"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-item">
+
+            </div>
+            
+            <div class="sidebar-item">
+                <div class="box-logo">
+                    <img src = "/xlogo.png"/> 
+                </div>
+
+                <div class="account">
+                    <div class="acc-name">
+                        <div class="acc-info">
+                            
+                            <h1> {{#if lname}} {{lname}} {{/if}}, {{#if fname}} {{fname}} {{/if}}</h1>
+
+                            {{#if phone}} 
+                                <h2> {{phone}} </h2>
+                                {{/if}}
+
+                        </div>
+
+                    </div>
+
+                    
+
+                    <div class="acc-balance">
+                        <div class="bal-box">
+                            <div class="bal-title">
+                                <h1> Remaining Balance </h1>
+                            </div>
+                            <div class="bal-info">
+                                {{#if balance}}
+                                    <h2> ₱{{balance}} </h2>
+                                {{else}}
+                                    <h2>------</h2>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="logout">
+                        <div class="logout-btn">
+                            <form action="/auth/logout" method="post">
+                            <input type="submit" value="⇐ LOGOUT">
+                                </form>
+
+                          
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="container-content">
+            <div class="cc-box">
+                <div class="recent-login">
+                    <div class="rl-box">
+                        <div class="rl-title">
+                            <h1> RECENT LOGINS </h1>
+
+                        </div>
+                        <div class="rl-content">
+
+                        {{#each logs}}
+                            <div class="rl-cr">
+                                <div class="rl-cr-info">
+                                    <h4>Login Logs:{{Logs.Login}} </h4>
+                                </div>
+                            </div>
+                        {{/each}}
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+                <div class="menu">
+                    <div class="menu-box-title">
+                        <h1> MENU </h1>
+
+                    </div>
+
+                    <div class="menu-boxes">
+                        <div class="mb"></div>
+                        <div class="mb">
+                            <div class="mb-box">
+                                <a href = "/transact/send">
+                                <div class="icon">
+                                    <span class="material-symbols-outlined">send_money</span>
+
+                                </div>
+
+                                <div class="menu-title">
+                                    <h1> SEND MONEY</h1>
+
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+
+                        <div class="mb">
+                            <div class="mb-box">
+                                <a href = "#">
+                                <div class="icon">
+                                    <span class="material-symbols-outlined">history</span>
+
+                                </div>
+
+                                <div class="menu-title">
+                                     <form action="/transact/history" method="POST">
+                                        <input type="Submit" value="HISTORY">
+                                    </form>
+
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="mb">
+                            <div class="mb-box">
+                                <a href = "/about">
+                                <div class="icon">
+                                    <span class="material-symbols-outlined">info</span>
+
+                                </div>
+
+                                <div class="menu-title">
+                                    <h1> ABOUT</h1>
+
+                                </div>
+                                </a>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="footer">
+                    <h3> &trade;Trademark, X-Change v 1.0.0 |ADVD Final Exam | Bedania, Maglalang, Pangilinan, Yambao </h3>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+   
+</body>
+</html>
